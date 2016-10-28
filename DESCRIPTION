@@ -1,0 +1,25 @@
+Package: STRIPSONeal
+Title: STRIPS ONeal Lab data
+Version: 0.1
+Authors@R: c(
+    person("Jarad", "Niemi", email = "niemi@iastate.edu", role = c("aut", "cre")),
+    person("Matthew", "O'Neal", email = "oneal@iastate.edu", role = "aut")
+    )
+Description: Insect data for STRIPS watersheds including observations on both
+    the prairie and crop areas.
+Depends:
+    R (>= 3.0)
+Suggests:
+    STRIPSMeta,
+    dplyr,
+    tidyr,
+    testthat,
+    knitr,
+    rmarkdown
+Remotes:
+    ISU-STRIPS/STRIPSMeta
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
