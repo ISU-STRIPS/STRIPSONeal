@@ -12,6 +12,7 @@ insect_counts = read_dir(path    = "insect",
                          "habitat",
                          "rep",
                          "extension")) %>%
-  dplyr::select(-dir, -extension)
+  mutate(date = as.Date(paste(year, month, day, sep="/"))) %>%
+  dplyr::select(date, watershed, rep, taxa, count)
 
 devtools::use_data(insect_counts, overwrite = TRUE)
